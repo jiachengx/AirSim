@@ -130,8 +130,8 @@ void UAirBlueprintLib::enableViewportRendering(AActor* context, bool enable)
         viewport->EngineShowFlags.SetRendering(true);
 
         //HACK: FViewPort doesn't expose this field so we are doing dirty work around by maintaining count by ourselves
-        if (flush_on_draw_count_ > 0)
-            viewport->GetGameViewport()->DecrementFlushOnDraw();
+       // if (flush_on_draw_count_ > 0)
+          //  viewport->GetGameViewport()->DecrementFlushOnDraw();
     }
 }
 
